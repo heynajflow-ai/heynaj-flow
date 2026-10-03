@@ -1,0 +1,52 @@
+name: Bug report
+description: Report a reproducible HeyNaj Flow problem
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Do not include passwords, API keys, access tokens, customer data, or other sensitive information.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Public website
+        - Dashboard
+        - Website widget
+        - Knowledge
+        - Inquiries
+        - Voice
+        - Notifications
+        - Installation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser / device
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
