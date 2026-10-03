@@ -101,15 +101,11 @@ The HeyNaj Flow website widget retains **Powered by HeyNaj** branding.
 
 ## Deployment integrity protection
 
-HeyNaj Flow uses controlled deployment checks for customer runtime upgrades.
+HeyNaj Flow uses deployment-integrity checks to help protect managed customer installations.
 
-Although the Cloudflare workspace is customer-owned, manually changing the HeyNaj Flow-managed Worker, bindings, D1 schema, or deployment configuration can cause the installation to stop matching the verified state expected by HeyNaj Flow.
+Customers retain ownership of and access to their Cloudflare workspace. If core HeyNaj Flow-managed resources or deployment state are manually changed, a future controlled update may be blocked until the installation is reconciled.
 
-Before a controlled upgrade proceeds, HeyNaj Flow checks the expected installation, owner, package, schema, authorization, and deployment state.
-
-If that state has changed or cannot be verified, the controlled upgrade is **blocked rather than forced through**.
-
-This is an upgrade-safety mechanism. It does not lock your Cloudflare account or prevent you from accessing your own Cloudflare workspace.
+This protection does **not** lock your Cloudflare account or remove your access to Cloudflare.
 
 See [Deployment Integrity](docs/DEPLOYMENT_INTEGRITY.md) for more information.
 
@@ -133,11 +129,9 @@ https://heynajflow.com/
 
 ## About this repository
 
-This is the **public HeyNaj Flow product and community repository**.
+This repository is the public home for HeyNaj Flow product information, documentation, issue reporting, feature suggestions, launch updates, and community feedback.
 
-It is intended for public product information, documentation, issue reporting, feature suggestions, launch updates, and community feedback.
-
-The private HeyNaj Flow production platform, deployment configuration, credentials, customer data, and internal operational documentation are **not published here**.
+The HeyNaj Flow production platform source code is maintained separately.
 
 No open-source software license is granted unless one is explicitly added in the future.
 
