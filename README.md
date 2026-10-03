@@ -7,6 +7,15 @@ HeyNaj Flow is a free, self-service AI website assistant and business inquiry wo
 **Website:** https://heynajflow.com  
 **Get Started:** https://heynaj-flow-control.heynajflow.workers.dev/
 
+## Watch HeyNaj Flow
+
+[![Watch the HeyNaj Flow launch video](https://res.cloudinary.com/dt5j91krt/video/upload/so_2,w_1200,c_limit/v1791009669/HeyNaj_V3_720p_wqpiss.jpg)](https://player.cloudinary.com/embed/?cloud_name=dt5j91krt&public_id=HeyNaj_V3_720p_wqpiss)
+
+▶ **[Watch the HeyNaj Flow launch video](https://player.cloudinary.com/embed/?cloud_name=dt5j91krt&public_id=HeyNaj_V3_720p_wqpiss)**
+
+The video is hosted on Cloudinary so this repository stays lightweight while the same public asset can be reused across the HeyNaj Flow website and launch materials.
+
+
 ## What HeyNaj Flow does
 
 A visitor arrives on your website and asks a question.
@@ -103,20 +112,6 @@ If that state has changed or cannot be verified, the controlled upgrade is **blo
 This is an upgrade-safety mechanism. It does not lock your Cloudflare account or prevent you from accessing your own Cloudflare workspace.
 
 See [Deployment Integrity](docs/DEPLOYMENT_INTEGRITY.md) for more information.
-
----
-
-## Launch video
-
-▶ **Watch the HeyNaj Flow launch video:**  
-https://player.cloudinary.com/embed/?cloud_name=dt5j91krt&public_id=HeyNaj_V3_720p_wqpiss
-
-**Direct MP4:**  
-https://res.cloudinary.com/dt5j91krt/video/upload/v1791009669/HeyNaj_V3_720p_wqpiss.mp4
-
-The public video is hosted on Cloudinary so the GitHub repository stays lightweight and the same asset can be reused on the HeyNaj Flow website.
-
-See [Video Asset Guidance](assets/video/README.md).
 
 ---
 
