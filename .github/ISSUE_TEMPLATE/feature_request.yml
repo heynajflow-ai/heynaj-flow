@@ -1,0 +1,36 @@
+name: Feature request
+description: Suggest an improvement for HeyNaj Flow
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem would this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Public website
+        - Dashboard
+        - Website widget
+        - Knowledge
+        - Inquiries
+        - Voice
+        - Notifications
+        - Installation
+        - Other
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
