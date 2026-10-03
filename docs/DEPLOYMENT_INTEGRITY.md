@@ -1,43 +1,21 @@
 # Deployment Integrity Protection
 
-HeyNaj Flow customers use a customer-owned Cloudflare workspace for their customer runtime.
+HeyNaj Flow uses deployment-integrity checks to help protect managed customer installations.
 
-Ownership of the Cloudflare workspace does not mean that every infrastructure-level change is safe for the managed HeyNaj Flow installation.
+Each customer runtime is deployed in a customer-owned Cloudflare workspace. Customers retain ownership of and access to their Cloudflare account and resources.
 
-## What HeyNaj Flow protects
+If core HeyNaj Flow-managed resources or deployment state are manually changed, a future controlled update may be blocked until the installation is reconciled.
 
-Controlled upgrades verify the expected:
+## What this means
 
-- installation
-- owner
-- customer runtime
-- package/build
-- schema
-- authorization
-- deployment state
+Deployment integrity protection:
 
-If the required deployment state has changed, expired, or cannot be verified, the controlled upgrade is blocked instead of being forced through.
-
-## What this does not mean
-
-This protection does **not** lock the customer's Cloudflare account.
-
-It does not remove the customer's ownership or access to Cloudflare.
-
-It is an upgrade-safety mechanism designed to avoid applying a HeyNaj Flow update to an installation that no longer matches the state the platform expects.
+- does **not** lock your Cloudflare account
+- does **not** remove your access to Cloudflare
+- helps prevent a controlled HeyNaj Flow update from being applied when the expected installation state cannot be verified
 
 ## Recommended practice
 
-Avoid manually changing the HeyNaj Flow-managed:
+Use the supported HeyNaj Flow setup and update flows whenever possible.
 
-- Worker code
-- Worker bindings
-- D1 schema
-- deployment configuration
-- installation pairing/configuration
-
-unless you understand the consequences.
-
-Use the supported HeyNaj Flow setup and controlled-upgrade flow whenever possible.
-
-If you intentionally make infrastructure-level changes, HeyNaj Flow may require the deployment state to be reconciled before a future controlled upgrade can proceed.
+If you intentionally make infrastructure-level changes to HeyNaj Flow-managed resources, be aware that the installation may need to be reconciled before a future controlled update can proceed.
