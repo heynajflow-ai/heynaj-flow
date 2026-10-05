@@ -5,7 +5,7 @@
 HeyNaj Flow is a free, self-service AI website assistant and business inquiry workspace for website owners, businesses, service providers, professionals, and agencies managing client websites.
 
 **Website:** https://heynajflow.com  
-**Get Started:** https://heynaj-flow-control.heynajflow.workers.dev/
+**Get Started:** https://heynajflow.com/get-started/
 
 ## Watch HeyNaj Flow
 
@@ -15,6 +15,12 @@ HeyNaj Flow is a free, self-service AI website assistant and business inquiry wo
 
 The video is hosted on Cloudinary so this repository stays lightweight while the same public asset can be reused across the HeyNaj Flow website and launch materials.
 
+## Documentation
+
+- **[Getting Started](docs/GETTING_STARTED.md)** — public-safe setup flow from workspace access to website installation and testing
+- **[Product Overview](docs/PRODUCT_OVERVIEW.md)** — product workflow, capabilities, Knowledge, Inquiries, voice, notifications, and access model
+- **[Architecture Overview](docs/ARCHITECTURE.md)** — high-level public architecture and customer-owned Cloudflare model
+- **[Deployment Integrity](docs/DEPLOYMENT_INTEGRITY.md)** — public explanation of managed deployment-integrity checks
 
 ## What HeyNaj Flow does
 
@@ -98,7 +104,6 @@ Typed multilingual questions can be understood depending on the configured AI pr
 
 The HeyNaj Flow website widget retains **Powered by HeyNaj** branding.
 
-
 ## Deployment integrity protection
 
 HeyNaj Flow uses deployment-integrity checks to help protect managed customer installations.
@@ -119,9 +124,11 @@ Businesses should review important conversations and information before acting o
 
 ## Get started
 
-Create or access your workspace:
+Start here:
 
-https://heynaj-flow-control.heynajflow.workers.dev/
+https://heynajflow.com/get-started/
+
+The public Get Started page provides the branded entry point to create or access your HeyNaj Flow workspace.
 
 Learn more:
 
